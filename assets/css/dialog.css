@@ -1,0 +1,14 @@
+.blur{
+    filter: blur(0px);
+    min-height: 100vh;
+}
+.overlay{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    display: none;
+}
