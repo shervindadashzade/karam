@@ -1,0 +1,12 @@
+:root{
+    --green:#16DD12;
+    --primary:#FF0000;
+    --light-grey: #F6F6F6;
+    --dark-grey: #504E4E;
+}
+.color-primary{
+    color: var(--primary);
+}
+.color-secondery{
+    color: var(--green);
+}

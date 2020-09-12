@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "B Yekan+";
+    font-weight: normal;
+    src: url(../fonts/BYekan+.ttf);
+}
+@font-face{
+    font-family: "B Yekan+";
+    font-weight: bold;
+    src: url(../fonts/BYekan+\ Bold.ttf);
+}
+*{
+    font-family: "B Yekan+";
+}
+/* big title */
+h1{
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* normal title */
+h2{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* big description */
+h3{
+    font-size: 17px;
+    color: var(--dark-grey);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+/* normal description */
+h4{
+    font-size: 13px;
+    color: var(--dark-grey);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
