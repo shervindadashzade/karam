@@ -1,5 +1,5 @@
 .blur{
-    filter: blur(0px);
+    filter: blur(8px);
     min-height: 100vh;
 }
 .overlay{
@@ -10,5 +10,30 @@
     left: 0;
     top: 0;
     opacity: 0.8;
-    display: none;
+}
+.dialog-box{
+    padding: 30px;
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.dialog-box .title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.dialog-box .content{
+    padding: 10px 5px;
+    margin: auto;
+}
+.dialog-box .actions{
+    width: 137px;
+    margin: auto;
+}
+.dialog-box .content .color-select{
+    padding: 10px 0px;
+    display: flex;
 }

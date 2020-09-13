@@ -1,0 +1,18 @@
+.text-field{
+    outline: none;
+    border: 0.5px solid #CBCBCB;
+    padding: 12px 14px;
+    color: var(--dark-grey);
+    width: 90%;
+    margin-bottom: 10px;
+}
+.text-area{
+    max-width:90%;
+    min-width: 90%;
+    margin-bottom: 10px;
+    outline: none;
+    border: 0.5px solid #CBCBCB;
+    padding: 12px 14px;
+    color: var(--dark-grey);
+    min-height: 100px;
+}

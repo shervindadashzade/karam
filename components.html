@@ -13,8 +13,10 @@
 
 <body>
     <div class="blur">
-        <div class="container component-test">
+        <div class="container">
 
+        </div>
+        <div class="container component-test">
             <div class="box">
                 <h1>عنوان خیلی بزرگ</h1>
                 <h3>توضیحات بزرگ</h3>
@@ -69,10 +71,34 @@
                     <button class="btn icon-btn"><i class="fas fa-trash color-primary"></i></button>
                 </div>
             </div>
+
         </div>
     </div>
     <button class="btn btn-fab">+</button>
     <div class="overlay"></div>
+    <div class="dialog-box">
+        <h1 class="title">اضافه کردن کار جدید</h1>
+        <div class="content">
+            <input class="text-field" type="text" placeholder="عنوان کار">
+            <textarea class="text-area" placeholder="توضیحات کار"></textarea>
+            <div class="color-select">
+                <h3>رنگ کار ( بر اساس رنگ )</h3>
+                <div class="color-picker">
+                    <div class="circle" style="background:var(--primary);"></div>
+                    <div class="colors">
+                        <div class="color" style="background: var(--primary);"></div>
+                        <div class="color" style="background: var(--yellow);"></div>
+                        <div class="color select" style="background: var(--blue);"></div>
+                        <div class="color" style="background: var(--purpele);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary">لغو</button>
+            <button class="btn btn-secondery">تایید</button>
+        </div>
+    </div>
 </body>
 
 </html>

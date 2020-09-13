@@ -3,6 +3,9 @@
     --primary:#FF0000;
     --light-grey: #F6F6F6;
     --dark-grey: #504E4E;
+    --yellow:#F9FE15;
+    --blue: #15B8FE;
+    --purpele: #C115FE;
 }
 .color-primary{
     color: var(--primary);

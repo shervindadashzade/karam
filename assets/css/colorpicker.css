@@ -1,0 +1,24 @@
+.color-picker{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}
+.color-picker .colors{
+    display: flex;
+}
+.color-picker .circle{
+    width: 20px;
+    height: 20px;
+    /*  test background */
+    border-radius: 50px;
+}
+.color-picker .color{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color-picker .color.select::after{
+    content: url('../images/tick.png');
+}
