@@ -1,5 +1,5 @@
 import dialogBox from './modules/dialog.js';
-
+import {colorPicker} from './modules/color-picker.js';
 export let addWorkDialog = new dialogBox({
     title : 'اضافه کردن کار جدید',
     content: `
@@ -10,9 +10,9 @@ export let addWorkDialog = new dialogBox({
                     <div class="color-picker">
                         <div class="circle" style="background:var(--primary);"></div>
                         <div class="colors">
-                            <div class="color" style="background: var(--primary);"></div>
+                            <div class="color select" style="background: var(--primary);"></div>
                             <div class="color" style="background: var(--yellow);"></div>
-                            <div class="color select" style="background: var(--blue);"></div>
+                            <div class="color" style="background: var(--blue);"></div>
                             <div class="color" style="background: var(--purpele);"></div>
                         </div>
                     </div>
@@ -27,4 +27,7 @@ export let addWorkDialog = new dialogBox({
         enable: true
     }
 });
-document.querySelector('.btn-fab').onclick = () => { addWorkDialog.toggle() };
+document.querySelector('.btn-fab').onclick = () => { 
+    addWorkDialog.toggle(); 
+    colorPicker.init();
+};
