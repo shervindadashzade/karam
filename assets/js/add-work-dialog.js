@@ -1,10 +1,19 @@
 import dialogBox from './modules/dialog.js';
 import {colorPicker} from './modules/color-picker.js';
+import Todo from './modules/todo-class.js';
+import store from './modules/store.js';
+
+function addTodo(){
+        // TODO::handle error if title and desc was empty
+       let titleElement = document.querySelector('.dialog-box .text-field');
+       let descElement = document.querySelector('.dialog-box .text-area');
+       store.todos.push(new Todo(titleElement.value,descElement.value,colorPicker.getSelectedColor(),false));
+}
 export let addWorkDialog = new dialogBox({
     title : 'اضافه کردن کار جدید',
     content: `
-    <input class="text-field" type="text" placeholder="عنوان کار">
-                <textarea class="text-area" placeholder="توضیحات کار"></textarea>
+    <input class="text-field" type="text" placeholder="عنوان کار" required>
+                <textarea class="text-area" placeholder="توضیحات کار" required></textarea>
                 <div class="color-select">
                     <h3>رنگ کار ( بر اساس رنگ )</h3>
                     <div class="color-picker">
@@ -23,7 +32,7 @@ export let addWorkDialog = new dialogBox({
     },  
     greenButton:{
         caption: 'تایید',
-        function: null,
+        function: addTodo,
         enable: true
     }
 });
