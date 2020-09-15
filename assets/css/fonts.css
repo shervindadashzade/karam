@@ -43,3 +43,7 @@ h4{
     margin-bottom: 10px;
     font-weight: normal;
 }
+h4 strong{
+    font-size: 15px;
+    font-weight: bold;
+}
