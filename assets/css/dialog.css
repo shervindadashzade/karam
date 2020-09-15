@@ -39,3 +39,8 @@
     padding: 10px 0px;
     display: flex;
 }
+@media only screen and (max-width: 663px) {
+    .dialog-box{
+        width: 80% !important;
+    }
+  }
