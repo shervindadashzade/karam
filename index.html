@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- font awsome added -->
+    <script src="https://kit.fontawesome.com/f47cc4cfe1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css" />
-    <script src="assets/app.js" ></script>
+    <script src="assets/app.js"></script>
     <title>کارام | مدیریت کارهای روزانه</title>
 </head>
+
 <body>
+    <div class="blur">
+        <div class="header">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="" class="logo">
+                <h4>کارای روزانه تو سرو سامون بده</h4>
+            </div>
+            <div class="actions">
+                <button class="btn icon-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>لیست کارها</h1>
+            <h3>کارهایی که باید انجام بدی رو اینجا ببینی میتونی اونارو به عنوان انجام شده تیک بزنی یا حذف کنی یا کار
+                جدید
+                اضافه کنی </h3>
+            <div class="card-box-container">
+                <div class="card-box">
+                    <div class="info">
+                        <div class="title">
+                            <div class="circle"></div>
+                            <h2>خرید گوشت برای خانه</h2>
+                        </div>
+                        <h4>تو راه برگشت از سر کار نیم کیلو گوشت از غیاث آباد برای آبگوشت بخرم</h4>
+                    </div>
+                    <div class="actions">
+                        <button class="btn icon-btn"><i class="fas fa-check color-secondery"></i></button>
+                        <button class="btn icon-btn"><i class="fas fa-trash color-primary"></i></button>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="info">
+                        <div class="title">
+                            <div class="circle"></div>
+                            <h2>خرید گوشت برای خانه</h2>
+                        </div>
+                        <h4>تو راه برگشت از سر کار نیم کیلو گوشت از غیاث آباد برای آبگوشت بخرم</h4>
+                    </div>
+                    <div class="actions">
+                        <button class="btn icon-btn"><i class="fas fa-check color-secondery"></i></button>
+                        <button class="btn icon-btn"><i class="fas fa-trash color-primary"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <h1>کارای انجام شده</h1>
+            <div class="card-box-container">
+                <div class="card-box done">
+                    <div class="info">
+                        <div class="title">
+                            <div class="circle"></div>
+                            <h2>خرید گوشت برای خانه</h2>
+                        </div>
+                        <h4>تو راه برگشت از سر کار نیم کیلو گوشت از غیاث آباد برای آبگوشت بخرم</h4>
+                    </div>
+                    <div class="actions">
+                        <button class="btn icon-btn"><i class="fas fa-trash color-primary"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-fab">+</button>
+    <div class="overlay"></div>
+
+    <div class="dialog-box">
+        <h1 class="title">اضافه کردن کار جدید</h1>
+        <div class="content">
+
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary">لغو</button>
+            <button class="btn btn-secondery">تایید</button>
+        </div>
+    </div>
 </body>
+
 </html>

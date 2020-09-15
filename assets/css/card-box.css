@@ -37,3 +37,6 @@
 .card-box.done .circle{
     background: var(--green);
 }
+.card-box-container{
+    margin-top: 30px;
+}

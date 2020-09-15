@@ -1,5 +1,5 @@
 .blur{
-    filter: blur(8px);
+    filter: blur(0px);
     min-height: 100vh;
 }
 .overlay{
@@ -10,8 +10,10 @@
     left: 0;
     top: 0;
     opacity: 0.8;
+    display: none;
 }
 .dialog-box{
+    display: none;
     padding: 30px;
     width: 600px;
     background: white;
