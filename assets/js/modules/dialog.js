@@ -45,6 +45,8 @@ class dialogBox{
             this.dialogBoxElement.style.display = 'block';
             this.overlayElement.style.display = 'block';
             this.blurElement.style.filter = 'blur(8px)';
+            // TODO:: perhaps change in future
+            window.scrollTo(0,0);
             this.show = true;
         }
     }
