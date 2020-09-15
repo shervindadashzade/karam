@@ -10,8 +10,8 @@ ok guys after some developing my first preview of my app is ready so lets try th
 * Remove todo
 * Do a todo
 ## Todo:
- [ ] perhaps add local storage saving
- [ ] backend
- [ ] user login
- [ ] user register
+- [ ] Perhaps add local storage saving
+- [ ] Backend
+- [ ] User login
+- [ ] User register
 
