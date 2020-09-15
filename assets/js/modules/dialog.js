@@ -42,6 +42,8 @@ class dialogBox{
             this.blurElement.style.filter = 'blur(0px)';
             this.show = false;
         }else{
+            // TODO:: perhaps better performance
+            this.config();
             this.dialogBoxElement.style.display = 'block';
             this.overlayElement.style.display = 'block';
             this.blurElement.style.filter = 'blur(8px)';
@@ -49,6 +51,10 @@ class dialogBox{
             window.scrollTo(0,0);
             this.show = true;
         }
+    }
+    reset(){
+        let contentElement = document.querySelector('.dialog-box .content');
+        contentElement.innerHTML = this.content;
     }
 }
 

@@ -2,12 +2,16 @@ import dialogBox from './modules/dialog.js';
 import {colorPicker} from './modules/color-picker.js';
 import Todo from './modules/todo-class.js';
 import store from './modules/store.js';
-
+import render from './modules/todo-render.js';
 function addTodo(){
         // TODO::handle error if title and desc was empty
        let titleElement = document.querySelector('.dialog-box .text-field');
        let descElement = document.querySelector('.dialog-box .text-area');
        store.todos.push(new Todo(titleElement.value,descElement.value,colorPicker.getSelectedColor(),false));
+       addWorkDialog.toggle();
+       // TODO::perhaps better method for better performance
+       addWorkDialog.reset();
+       render();
 }
 export let addWorkDialog = new dialogBox({
     title : 'اضافه کردن کار جدید',
