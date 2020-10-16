@@ -1,0 +1,26 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shervindadashzade/karam.git"
+  },
+  "author": "shervin dadashzade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shervindadashzade/karam/issues"
+  },
+  "homepage": "https://github.com/shervindadashzade/karam#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
