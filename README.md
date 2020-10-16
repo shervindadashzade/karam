@@ -1,4 +1,4 @@
-![info](https://github.com/shervindadashzade/karam/blob/master/docs/info.jpg)
+![info](https://github.com/shervindadashzade/karam/blob/master/front-end/docs/info.jpg)
 
 # Karam 
 Karam is an underdevelopment Persian/Farsi ToDo web application.
