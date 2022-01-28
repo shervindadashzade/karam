@@ -7,17 +7,17 @@ $conn = new mysqli($host,$username,$password);
 
 
 if($conn->connect_error){
-    die("Connection failec: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
 echo "Connected to MySQL successfully.\n";
 
-$sql = "CREATE DATABASE IF NOT EXISTS karam";
+$sql = "CREATE DATABASE IF NOT EXISTS " . $db_name;
 
 if($conn->query($sql)){
     echo "Karam database has been created.\n";
 
-    $sql = "USE karam";
+    $sql = "USE " . $db_name;
     
     if($conn->query($sql) == False){
         die("Error in selecting database. ". $conn->error . "\n");

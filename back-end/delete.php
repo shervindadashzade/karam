@@ -2,7 +2,7 @@
 include 'config.php';
 
 
-$conn = new mysqli($host,$username,$password,'karam');
+$conn = new mysqli($host,$username,$password,$db_name);
 
 
 if($conn->connect_error){
