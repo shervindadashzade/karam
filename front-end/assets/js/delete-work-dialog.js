@@ -1,13 +1,24 @@
 import dialogBox from './modules/dialog.js';
 import store from './modules/store.js';
 import render from './modules/todo-render.js';
-
+import Request from './api/request.js';
 let id;
 function setId(newid) {
     id = newid;
 }
 function deleteTodo(){
-    store.todos.splice(id,1);
+    let splice_id;
+    for(let todo of store.todos){
+        if(todo.id == id){
+            splice_id = store.todos.indexOf(todo)
+        }
+    }
+    let data= new FormData()
+    data.append('id',id);
+    new Request('/delete.php','POST',data,(txt)=>{
+        console.log(txt)
+    },(err)=> console.log(err));
+    store.todos.splice(splice_id,1);
     deleteWorkDialog.toggle();
     render();
 }

@@ -1,5 +1,6 @@
 class Todo{
-    constructor(title,desc,color,done){
+    constructor(id,title,desc,color,done){
+        this.id = id;
         this.title = title;
         this.color = color;
         this.desc = desc;

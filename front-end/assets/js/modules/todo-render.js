@@ -20,7 +20,7 @@ export default function render(){
                         <h4>${todo.desc}</h4>
                     </div>
                     <div class="actions">
-                        <button class="btn icon-btn" onclick='deleteTodo(${i})' ><i class="fas fa-trash color-primary"></i></button>
+                        <button class="btn icon-btn" onclick='deleteTodo(${todo.id})' ><i class="fas fa-trash color-primary"></i></button>
                     </div>
                 </div>
             `;
@@ -35,8 +35,8 @@ export default function render(){
                         <h4>${todo.desc}</h4>
                     </div>
                     <div class="actions">
-                        <button class="btn icon-btn" onclick='doTodo(${i})' ><i class="fas fa-check color-secondery"></i></button>
-                        <button class="btn icon-btn" onclick='deleteTodo(${i})' ><i class="fas fa-trash color-primary"></i></button>
+                        <button class="btn icon-btn" onclick='doTodo(${todo.id})' ><i class="fas fa-check color-secondery"></i></button>
+                        <button class="btn icon-btn" onclick='deleteTodo(${todo.id})' ><i class="fas fa-trash color-primary"></i></button>
                     </div>
                 </div>
             `;

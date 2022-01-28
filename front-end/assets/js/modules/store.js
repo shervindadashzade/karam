@@ -1,11 +1,21 @@
 import Todo from './todo-class.js';
+import Request from '../api/request.js';
+
+let todos = [];
+new Request('/todo.php','GET',[],(txt)=>{
+    let json = JSON.parse(txt);
+    for(let i=0; i<json.length;i++){
+        todos.push(new Todo(json[i].id,json[i].title,json[i].description,json[i].color, parseInt(json[i].done) ? true : false))
+    }
+    
+}, (txt)=>{
+    console.log(txt);
+})
+
+console.log(todos)
 
 let store = {
-    todos: [
-        new Todo('مسواک زدن','هر شب راس ساعت 10 مسواک میزنی','var(--primary)',true),
-        new Todo('خرید گوشت برای خانه','تو راه برگشت از سر کار نیم کیلو گوشت از غیاث آباد برای آبگوشت بخرم','var(--blue)',false),
-        new Todo('کتاب پدر فقیر پدر پول دار','کتاب رو از فردوسی بخر','var(--primary)',false),
-    ],
+    todos,
 };
 
 export default store;
