@@ -1,5 +1,5 @@
 let config = {
-    url : 'http://karam.lan/back-end',
+    url : 'http://karam.gigfa.com/api',
 };
 
 export default config;
